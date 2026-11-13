@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#102b52">
+<title>RM's Pathshala | Mock Interview Enrolment</title>
+<style>
+:root{--navy:#102b52;--blue:#174b83;--red:#e3262e;--gold:#f5bd35;--ink:#17263b;--muted:#65748a;--line:#dce4ee;--bg:#f3f6fb}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);font-family:Arial,Helvetica,sans-serif;color:var(--ink)}
+.wrap{max-width:760px;margin:28px auto;padding:0 16px 36px}
+.hero{background:linear-gradient(135deg,#102b52,#1c5791);color:white;border-radius:22px;padding:28px 24px 25px;position:relative;overflow:hidden;box-shadow:0 12px 34px #122b4a25}
+.hero:after{content:"";position:absolute;width:260px;height:260px;border:34px solid #ffffff12;border-radius:50%;right:-95px;top:-115px}
+.brand{display:flex;align-items:center;gap:14px;position:relative;z-index:1}
+.mark{width:58px;height:58px;border-radius:16px;background:#fff;display:grid;place-items:center;color:var(--red);font-weight:900;font-size:22px;letter-spacing:-2px}
+.brandname{font-size:clamp(23px,5vw,34px);font-weight:900;letter-spacing:1px}.motto{font-size:11px;letter-spacing:2px;color:#d9e7f7;margin-top:3px}
+.kicker{display:inline-block;background:var(--gold);color:#1b2d47;font-weight:800;font-size:12px;padding:7px 12px;border-radius:99px;margin-top:25px;position:relative;z-index:1}
+h1{font-size:clamp(30px,7vw,46px);line-height:1.03;margin:13px 0 9px;position:relative;z-index:1}
+.sub{font-size:15px;color:#e4edf8;line-height:1.5;max-width:530px;position:relative;z-index:1}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px;position:relative;z-index:1}.tag{border:1px solid #ffffff65;border-radius:99px;padding:8px 11px;font-size:12px;font-weight:700}
+.card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:22px;margin-top:17px;box-shadow:0 7px 24px #132a4710}
+.card h2{font-size:18px;margin:0 0 5px;color:var(--navy)}.hint{font-size:13px;color:var(--muted);margin:0 0 18px;line-height:1.45}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.field{display:flex;flex-direction:column;gap:7px}.full{grid-column:1/-1}
+label{font-size:13px;font-weight:700;color:#263b56}input,select,textarea{width:100%;border:1px solid #cbd6e3;border-radius:10px;padding:13px 12px;font-size:15px;color:var(--ink);background:#fff;outline:none}
+input:focus,select:focus,textarea:focus{border-color:#3979b9;box-shadow:0 0 0 3px #3979b91a}textarea{min-height:86px;resize:vertical}
+.req{color:var(--red)}.check{display:flex;gap:10px;align-items:flex-start;font-size:13px;line-height:1.45;color:#34465e;margin:12px 0}.check input{width:18px;height:18px;margin:0;flex:0 0 auto}
+button{width:100%;border:0;border-radius:12px;background:var(--red);color:white;font-size:17px;font-weight:800;padding:16px;margin-top:9px;cursor:pointer;box-shadow:0 7px 18px #e3262e30}
+button:active{transform:translateY(1px)}.small{font-size:12px;color:var(--muted);line-height:1.5;margin-top:12px}
+.info{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:14px}.info strong{color:var(--navy)}footer{text-align:center;color:#758196;font-size:12px;padding:22px 5px 0}
+@media(max-width:560px){.wrap{margin:12px auto}.hero{padding:23px 18px}.card{padding:18px}.grid{grid-template-columns:1fr}.full{grid-column:auto}.brandname{font-size:24px}}
+</style>
+</head>
+<body><main class="wrap">
+<header class="hero">
+ <div class="brand"><div class="mark">RM</div><div><div class="brandname">RM'S PATHSHALA</div><div class="motto">VIDYA RATNAM MAHA DHANAM</div></div></div>
+ <div class="kicker">FULLY OFFLINE PROGRAMME</div>
+ <h1>MOCK INTERVIEW<br>ENROLMENT</h1>
+ <p class="sub">Register for a structured mock interview with an expert interview panel and receive practical interview feedback.</p>
+ <div class="tags"><span class="tag">MISCELLANEOUS</span><span class="tag">WBSSC GROUP C</span><span class="tag">WBSSC GROUP D</span><span class="tag">PRIMARY</span></div>
+</header>
+<form id="enrol">
+<section class="card"><h2>01 · Candidate Details</h2><p class="hint">Enter your details exactly as you would like the institute to contact you.</p>
+<div class="grid">
+<div class="field full"><label for="name">Full name <span class="req">*</span></label><input id="name" name="name" required autocomplete="name" placeholder="Your full name"></div>
+<div class="field"><label for="mobile">Mobile number <span class="req">*</span></label><input id="mobile" name="mobile" required inputmode="numeric" pattern="[6-9][0-9]{9}" maxlength="10" placeholder="10-digit number"></div>
+<div class="field"><label for="whatsapp">WhatsApp number</label><input id="whatsapp" name="whatsapp" inputmode="numeric" pattern="[6-9][0-9]{9}" maxlength="10" placeholder="If different"></div>
+<div class="field full"><label for="email">Email address</label><input id="email" name="email" type="email" placeholder="Optional"></div>
+<div class="field full"><label for="address">Address <span class="req">*</span></label><textarea id="address" name="address" required placeholder="Village / locality, district, PIN"></textarea></div>
+</div></section>
+<section class="card"><h2>02 · Examination Details</h2><p class="hint">Select the examination for which you want to attend the mock interview.</p>
+<div class="grid">
+<div class="field"><label for="exam">Examination category <span class="req">*</span></label><select id="exam" name="exam" required><option value="">Choose category</option><option>Miscellaneous</option><option>WBSSC Group C</option><option>WBSSC Group D</option><option>Primary</option></select></div>
+<div class="field"><label for="qualification">Highest qualification <span class="req">*</span></label><select id="qualification" name="qualification" required><option value="">Choose qualification</option><option>Higher Secondary</option><option>Diploma</option><option>Graduate</option><option>Postgraduate</option><option>Other</option></select></div>
+<div class="field"><label for="experience">Have you attended an interview before? <span class="req">*</span></label><select id="experience" name="experience" required><option value="">Choose</option><option>Yes</option><option>No</option></select></div>
+<div class="field"><label for="preparing">Are you currently preparing? <span class="req">*</span></label><select id="preparing" name="preparing" required><option value="">Choose</option><option>Yes</option><option>No</option></select></div>
+</div></section>
+<section class="card"><h2>03 · Interview Preference</h2><p class="hint">Your preferred date and time are requests only. The institute will confirm the final schedule separately.</p>
+<div class="grid">
+<div class="field"><label for="date">Preferred date</label><input id="date" name="date" type="date"></div>
+<div class="field"><label for="slot">Preferred time</label><select id="slot" name="slot"><option>No preference</option><option>Morning</option><option>Afternoon</option></select></div>
+<div class="field full"><label for="notes">Additional information</label><textarea id="notes" name="notes" placeholder="Anything you would like the interview panel to know (optional)"></textarea></div>
+</div></section>
+<section class="card"><h2>04 · Confirmation</h2>
+<label class="check"><input type="checkbox" id="offline" required><span>I understand that this is a fully offline mock interview programme at Kathjuridanga, Bankura. <span class="req">*</span></span></label>
+<label class="check"><input type="checkbox" id="consent" required><span>I confirm that the information provided is correct and agree to be contacted by RM's Pathshala regarding this enrolment. <span class="req">*</span></span></label>
+<button type="submit">SUBMIT ENROLMENT VIA WHATSAPP →</button>
+<p class="small">On submission, WhatsApp will open with your enrolment details addressed to RM's Pathshala. Please press <b>Send</b> in WhatsApp to complete your submission. Your details are not stored on this website.</p>
+</section>
+</form>
+<section class="card"><div class="info"><div><strong>VENUE</strong><br>Kathjuridanga, Bankura</div><div><strong>CONTACT</strong><br>9609888545</div><div><strong>MODE</strong><br>Fully Offline</div></div></section>
+<footer>© RM'S PATHSHALA · MOCK INTERVIEW ENROLMENT</footer>
+</main>
+<script>
+document.getElementById('enrol').addEventListener('submit',function(e){
+ e.preventDefault();
+ const f=e.currentTarget;
+ if(!f.reportValidity()) return;
+ const v=id=>document.getElementById(id).value.trim();
+ const lines=[
+  "RM'S PATHSHALA — MOCK INTERVIEW ENROLMENT",
+  "",
+  "Full Name: "+v("name"),
+  "Mobile: "+v("mobile"),
+  "WhatsApp: "+(v("whatsapp")||"Not provided"),
+  "Email: "+(v("email")||"Not provided"),
+  "Address: "+v("address"),
+  "Examination: "+v("exam"),
+  "Qualification: "+v("qualification"),
+  "Previous interview: "+v("experience"),
+  "Currently preparing: "+v("preparing"),
+  "Preferred date: "+(v("date")||"No preference"),
+  "Preferred time: "+v("slot"),
+  "Additional information: "+(v("notes")||"None"),
+  "",
+  "I acknowledge that the programme is fully offline."
+ ];
+ const url="https://wa.me/919609888545?text="+encodeURIComponent(lines.join("\n"));
+ window.location.href=url;
+});
+</script></body></html>
